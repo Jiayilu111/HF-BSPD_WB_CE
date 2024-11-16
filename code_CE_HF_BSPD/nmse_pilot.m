@@ -1,5 +1,9 @@
 clc,clear,close all
+<<<<<<< HEAD
 N_iter = 100; 
+=======
+N_iter = 200; 
+>>>>>>> 316069b84f3774ffae0276fa8d15ee8c78e6faa3
 %%% system parameters
 Nt= 512; % number of beams (transmit antennas)
 N_RF = 4; % number of RF chains
