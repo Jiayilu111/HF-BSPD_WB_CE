@@ -65,7 +65,7 @@ if Ln > 0
                r_ref2 = r0(l);
                r_ref = r_ref1 + r_ref2;
                g =  gn(l) * c / f / 4 / pi / r_ref;
-               [an, ~] = near_field_manifold( Nt, d, f, r0(l), theta_n(l) );
+               [an, ~] = near_field_manifold( Nt, d, f, r_ref, theta_n(l) );
                Hn(:, m) = Hn(:, m) + g * exp(-1j*2*pi*f*r_ref/c) * an.';
                if m <= M
                    Gn(l, m) = g * exp(-1j*2*pi*f*r_ref/c);
